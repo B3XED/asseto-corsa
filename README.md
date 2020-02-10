@@ -20,7 +20,7 @@ SCSS
 
 1.01 Add alt 
 
-<style="border-left: 1px solid green>Fix social</style>
+ social
 
 
 # Contact
