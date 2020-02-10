@@ -4,7 +4,7 @@ Website asseto corsa club
 # Media views
 Screen coming soon...
 
-If you see a bug on your phone or tablet send me message on discord i will try to fix this.
+If you see a bug on your phone or tablet send me message on discord i will try to fix.
 
 # Audits
 <img src="https://cdn.discordapp.com/attachments/670620706991767562/676495816298463236/unknown.png" >
@@ -18,9 +18,11 @@ SCSS
 
 # Change log
 
-1.01 Add alt 
+1.01 
 
- social
+Add alt 
+
+Add social
 
 
 # Contact
