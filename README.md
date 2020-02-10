@@ -18,7 +18,10 @@ SCSS
 
 # Change log
 
-1.01 Add alt fix 
+1.01 Add alt 
+
+<style="border-left: 1px solid green>Fix social</style>
+
 
 # Contact
 All rights reserved @B3XED
