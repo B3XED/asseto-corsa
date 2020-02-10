@@ -8,7 +8,9 @@ If you see a bug on your phone or tablet send me message on discord i will try t
 
 # Tech used
 HTML
+
 JS
+
 SCSS
 
 # Change log
