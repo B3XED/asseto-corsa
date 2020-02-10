@@ -1,0 +1,83 @@
+@mixin size {
+    $size: 45px;
+    height: $size;
+    width:$size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s linear;
+    &:hover{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.social{
+    position: fixed;
+    z-index: 0;
+    transform: translate(0%,-50%);
+    left: 0%;
+    top: 50%;
+    height: auto;
+    width: 45px;
+    &__blocks{
+        display: flex;
+        flex-wrap: wrap;
+        &--yt{
+            @include size();
+            background-color: #c4302b;
+        }
+        &--twt{
+            @include size();
+            background-color: #657786;
+        }
+        &--ds{
+            @include size();
+            background-color: #7289DA;
+        }
+        &--fb{
+            @include size();
+            background-color: #3b5998;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .social{
+        position: fixed;
+        z-index: 0;
+        transform: translate(0%,-50%);
+        left: 0%;
+        top: 50%;
+        height: auto;
+        width: 40px;
+        &__blocks{
+            display: flex;
+            flex-wrap: wrap;
+            $size: 40px;
+            &--yt{
+                background-color: #c4302b;
+                height: $size;
+                width:  $size;
+            }
+            &--twt{
+                background-color: #657786;
+                height: $size;
+                width:  $size;
+            }
+            &--ds{
+                background-color: #7289DA;
+                height: $size;
+                width:  $size;
+            }
+            &--fb{
+                background-color: #3b5998;
+                height: $size;
+                width:  $size;
+            }
+    
+        }
+    }
+}

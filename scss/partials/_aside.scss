@@ -1,0 +1,52 @@
+@mixin aside {
+    background-size: cover;
+    height: 650px;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--text{
+        width: 50%;
+        margin-left: 63%;
+        h2{font-size: 29px;margin-bottom: 25px;}
+        p{width: 80%;line-height: 1.5;}
+    }
+}
+
+
+
+.model__aside{
+    background-image: url(../img/aside.jpg);
+    @include aside();
+}
+
+.realism__aside{
+   @include aside();
+   background-image: url(../img/aside1.jpg);
+   &--text{
+    margin-left: -25%;
+    p{width: 60%;}
+    h2{font-size: 29px;margin-bottom: 25px;}
+    }
+}
+
+#car{
+    background-image: url(../img/aside2.jpg);
+}
+@mixin box {
+    &--text{
+        margin-left: 0%;
+        h2{font-size: 29px;}
+        p{width: 120%;}
+    }
+}
+@media screen and (max-width: 1000px) {
+    .model__aside{
+       @include box();
+    }
+    .realism__aside{
+        @include box();
+    }
+}
+
+// phone

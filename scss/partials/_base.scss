@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+::-webkit-scrollbar{
+    width: 5px;
+    height: 13px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:  	rgb(255, 11, 11);
+}
+
+$main-color: #1d1f20;
+$second-color: #2a2c2e;
+
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    $main-color: white;
+    background-color: $main-color;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{color: black;}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}

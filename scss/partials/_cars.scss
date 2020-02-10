@@ -1,0 +1,91 @@
+main{
+    width: 100%;
+    overflow: hidden;
+    .cars__block{
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid rgba(0,0,0,0.219);
+        background-color: #323232;
+        #bottom{
+            margin-bottom: 120px;
+        }
+        .scheme__blocks{
+            $width-box: 320px;
+            $color-bg: #3D3D3D;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            &--block{
+                position: relative;
+                width: $width-box;
+                height: 180px;
+                background-color: black;
+                margin: 100px 85px 0px 85px;
+                box-shadow: 0px 0px 8px 0px black;
+                img{
+                    height: 180px;
+                    width: $width-box;
+                }
+                // margin-top: -85px;
+                .arrow__button{
+                    $size: 25px;
+                    height: $size;
+                    width: $size;
+                    background-color: $color-bg;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    margin-right: 3px;
+                    transform: translate(-50%,-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid red;
+                    transition: 0.3s linear;
+                    color: khaki;
+                }
+                .box__performances{
+                    height: 45px;
+                    width: $width-box;
+                    background-color: $color-bg;
+                    position: absolute;
+                    transform: translateY(120%);
+                    bottom: 0;
+                    border: 1px solid khaki;
+                    box-shadow: 0px 0px 8px 0px grey;
+                    display: flex;
+                    h4{
+                        border-left: 2px solid red;
+                        padding-left: 5px;
+                    }
+                    p{
+                        color: rgb(179, 179, 179);
+                    }
+                    &--car{
+                        padding: 3px 5px 0px 5px;
+                    }
+                    &--power{
+                        padding: 3px 10px 0px 10px;
+                    }
+                    &--weight{
+                        padding: 3px 5px 0px 28px;
+                    }
+                }
+            }
+            img{
+                max-height: 700px;
+                // height: 0px;
+                max-width: 898px;
+            }
+        }
+    }
+}
+
+.scheme__blocks--block.open+.scheme__blocks--car{
+    top: 50%;
+}
+
+#block1:hover{
+    cursor: pointer;
+    
+}
