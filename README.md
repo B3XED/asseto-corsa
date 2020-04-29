@@ -16,15 +16,6 @@ JS
 
 SCSS
 
-# Change log
-
-1.01 
-
-Add alt 
-
-Add social
-
-
 # Contact
 All rights reserved @B3XED
 
